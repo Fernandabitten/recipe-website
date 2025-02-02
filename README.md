@@ -1,4 +1,4 @@
-# <img src="images/Icon_logo.png" width="60px"> Leve Sabor
+# <img src="public/images/Icon_logo.png" width="40px"> Leve Sabor
 ## Projeto Web I - IFCE
 
 Este projeto foi desenvolvido como parte da disciplina de **Web I** no IFCE. O objetivo é criar um site com páginas estáticas usando **HTML**, **CSS** e **JavaScript**, além de publicar o projeto utilizando o **GitHub Pages**.
