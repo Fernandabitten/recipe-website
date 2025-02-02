@@ -3,22 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Leve Sabor</title>
+    <title>Gerenciar Receitas</title>
   </head>
   <body>
     <header>
-      <section>
-        <img src="../public//images//Icon_logo.png" alt="Comida deliciosa" />
-        <p>Leve Sabor</p>
-      </section>
-      <button>Cadastrar / Editar receita</button>
+      <div>
+        <h1>Painel Administrativo</h1>
+        <nav aria-label="Navegação principal">
+          <a href="../index.html">Página Inicial</a>
+          <a href="user_management.html">Usuários</a>
+          <a href="recipe-management.html">Receitas</a>
+          <a href="#">Sair</a>
+        </nav>
+      </div>
     </header>
 
     <main>
-      <section>
-        <a href="../index.html">← Voltar</a>
-      </section>
-
       <section>
         <h1>Cadastrar Nova Receita</h1>
         <form>
@@ -36,7 +36,7 @@
 
           <section>
             <section>
-              <p>Igredientes +</p>
+              <p>Ingredientes +</p>
               <section>
                 <input type="text" placeholder="Nome" />
                 <section>
@@ -75,16 +75,20 @@
               <td>Bowl Energia</td>
               <td>Rabanetes, folhas verdes e molho ...</td>
               <td>
-                <button>✏️</button>
-                <button>🗑️</button>
+                <section class="actions">
+                  <button class="btn btn-edit">Editar</button>
+                  <button class="btn btn-delete">Excluir</button>
+                </section>
               </td>
             </tr>
             <tr>
               <td>Salada Ravanello</td>
               <td>Rabanetes, folhas verdes e molho ...</td>
               <td>
-                <button>✏️</button>
-                <button>🗑️</button>
+                <section class="actions">
+                  <button class="btn btn-edit">Editar</button>
+                  <button class="btn btn-delete">Excluir</button>
+                </section>
               </td>
             </tr>
           </tbody>
@@ -94,14 +98,14 @@
 
     <footer>
       <section>
-        <img src="../public/images/Icon_logo.png" alt="Comida deliciosa" />
-        <p>Leve Sabor</p>
+        <span>© 2025 Sistema de Gestão</span>
+        <section>
+          Desenvolvido por
+          <a href="https://github.com/Fernandabitten/recipe-website"
+            >Fernanda Bittencourt</a
+          >
+        </section>
       </section>
-      <p>
-        © 2025
-        <a href="https://github.com/Fernandabitten">Fernanda Bittencourt</a>.
-        Todos os direitos reservados.
-      </p>
     </footer>
   </body>
 </html>
