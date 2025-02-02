@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leve Sabor</title>
+  </head>
+  <body>
+    <header>
+      <section>
+        <img src="../public//images//Icon_logo.png" alt="Comida deliciosa" />
+        <p>Leve Sabor</p>
+      </section>
+      <button>Cadastrar / Editar receita</button>
+    </header>
+
+    <main>
+      <section>
+        <a href="../index.html">← Voltar</a>
+      </section>
+
+      <section>
+        <h1>Cadastrar Nova Receita</h1>
+        <form>
+          <section>
+            <input type="text" placeholder="Título" />
+            <select>
+              <option value="" disabled selected>Categoria</option>
+              <option value="categoria1">Prato Principal</option>
+              <option value="categoria2">Sobremesa</option>
+              <option value="categoria2">Bebida</option>
+            </select>
+          </section>
+
+          <textarea placeholder="Descrição"></textarea>
+
+          <section>
+            <section>
+              <p>Igredientes +</p>
+              <section>
+                <input type="text" placeholder="Nome" />
+                <section>
+                  <input type="file" accept="image/*" />
+                </section>
+              </section>
+            </section>
+          </section>
+
+          <textarea placeholder="Modo de fazer"></textarea>
+
+          <section>
+            <input
+              type="file"
+              accept="image/*"
+              placeholder="Adicionar imagem"
+            />
+          </section>
+
+          <button type="submit">Salvar</button>
+        </form>
+      </section>
+
+      <section>
+        <h2>Lista de Receitas</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Nome</th>
+              <th>Descrição</th>
+              <th>Ação</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Bowl Energia</td>
+              <td>Rabanetes, folhas verdes e molho ...</td>
+              <td>
+                <button>✏️</button>
+                <button>🗑️</button>
+              </td>
+            </tr>
+            <tr>
+              <td>Salada Ravanello</td>
+              <td>Rabanetes, folhas verdes e molho ...</td>
+              <td>
+                <button>✏️</button>
+                <button>🗑️</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+
+    <footer>
+      <section>
+        <img src="../public/images/Icon_logo.png" alt="Comida deliciosa" />
+        <p>Leve Sabor</p>
+      </section>
+      <p>
+        © 2025
+        <a href="https://github.com/Fernandabitten">Fernanda Bittencourt</a>.
+        Todos os direitos reservados.
+      </p>
+    </footer>
+  </body>
+</html>

@@ -57,19 +57,13 @@ Elementos em todas as páginas:
 ## 🗂️ Estrutura do Projeto
 ```plaintext
 recipe-website/
-├── index.html                   # Página inicial do site
-├── details.html                # Página de detalhes do objeto-tema
-├── admin/                       # Área de administração (em desenvolvimento)
+├── index.html                   # Página inicial
+├── public/                      # Área pública
+│   ├── details.html             # Página de detalhes da receita
+│   ├── /images                  # Imagens usadas no projeto
+├── admin/                       # Área de administração 
 │   ├── login.html               # Página de login
-│   ├── register.html            # Página de cadastro de objetos-tema
-│   ├── usuarios.html            # Página de cadastro de usuários
-│   └── css/                     # Estilos específicos da área administrativa
-│       └── admin-styles.css
-├── css/                         # Estilos gerais do site (em desenvolvimento)
-│   ├── main.css                 # Estilos principais da área pública
-├── js/                          # Scripts JavaScript
-│   ├── main.js                  # Scripts principais da área pública
-│   └── admin.js                 # Scripts específicos da área administrativa
-├── images/                      # Imagens usadas no site
+│   ├── recipe-management.html   # Página de gerenciamento das receitas
+│   ├── usuarios.html            # Página de gerenciamento de usuários
 └── README.md                    # Arquivo de documentação do projeto 
 
