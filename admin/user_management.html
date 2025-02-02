@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área Administrativa</title>
+</head>
+<body>
+    <header>
+        <div>
+            <h1>Painel Administrativo</h1>
+            <nav aria-label="Navegação principal">
+                <a href="/">Página Inicial</a>
+                <a href="user_management.html">Usuários</a>
+                <a href="recipe-management.html">Receitas</a>
+                <a href="#">Sair</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section>
+          <h2>Cadastrar Novo Usuário</h2>
+          <form>
+              <section>
+                  <section>
+                      <label>Nome Completo</label>
+                      <input type="text" required>
+                  </section>
+                  <section>
+                      <label>E-mail</label>
+                      <input type="email" required>
+                  </section>
+                  <section>
+                      <label>Perfil</label>
+                      <select required>
+                          <option value="">Selecione</option>
+                          <option>Administrador</option>
+                          <option>Usuário Padrão</option>
+                      </select>
+                  </section>
+                  <section>
+                      <label>Senha</label>
+                      <input type="password" required>
+                  </section>
+              </section>
+              <section>
+                  <button type="submit">Salvar Usuário</button>
+              </section>
+          </form>
+  
+          <h2>Lista de Usuários</h2>
+          <section>
+              <table>
+                  <thead>
+                      <tr>
+                          <th>Nome</th>
+                          <th>E-mail</th>
+                          <th>Perfil</th>
+                          <th>Status</th>
+                          <th>Ações</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <td>João Silva</td>
+                          <td>joao@empresa.com</td>
+                          <td>Administrador</td>
+                          <td><span>Ativo</span></td>
+                          <td>
+                              <section>
+                                  <button>Editar</button>
+                                  <button>Excluir</button>
+                              </section>
+                          </td>
+                      </tr>
+                  </tbody>
+              </table>
+          </section>
+      </section>
+    </main>
+
+    <footer>
+      <section>
+          <span>© 2025 Sistema de Gestão</span>
+          <section>
+              Desenvolvido por 
+              <a href="https://github.com/Fernandabitten/recipe-website">Fernanda Bittencourt</a>
+          </section>
+      </section>
+  </footer>
+</body>
+</html>
