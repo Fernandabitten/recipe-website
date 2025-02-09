@@ -1,0 +1,21 @@
+/* Reset */
+:root {
+  --cor-primaria: #000a0f;
+  --cor-secundaria: #162a34;
+  --cor-terciaria: #324148;
+  --cor-fundo: #000a0f;
+  --fonte-principal: "Poppins", sans-serif;
+  --tamanho-texto: 24px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--fonte-principal);
+  font-size: var(--tamanho-texto);
+  background-color: var(--cor-fundo);
+  color: #ffffff;
+}
