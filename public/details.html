@@ -1,73 +1,111 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Leve Sabor</title>
-</head>
-<body>
-  <header>
-    <section>
-      <img src="images/Icon_logo.png" alt="Comida deliciosa">
-      <p>Leve Sabor</p>
-    </section>
-    <a href="../admin/recipe-management.html">
-      <button>
-       + Cadastrar / Editar receita
-      </button>
-    </a>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leve Sabor - Detalhe da receita</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <section class="search-bar-logo">
+        <img src="images/Icon_logo.png" alt="Folha verde" />
+        <div class="logo">Leve Sabor</div>
+      </section>
+      <a href="../admin/login.html" class="admin-link">Admin</a>
+    </header>
 
-  <main>
-    <section>
-      <a href="../index.html">← Voltar</a>
-    </section>
-
-    <section>
+    <main>
       <section>
-        <img src="images/img1.png" alt="Imagem do prato">
-        <section>
-          <h2>Bowl Energia</h2>
-          <p>A combinação de frango grelhado com brócolis, aspargos e cenoura sugere um prato nutritivo e energizante.</p>
-          <section>
-            <h3>Ingredientes:</h3>
-            <section>
-              <section>
-                <img src="images/lettuce.png" alt="Alface">
-                <p>Alface</p>
-              </section>
-              <section>
-                <img src="images/tomato.png" alt="Tomate">
-                <p>Tomate</p>
-              </section>
-              <section>
-                <img src="images/radish.png" alt="Rabanete">
-                <p>Rabanete</p>
-              </section>
-              <section>
-                <img src="images/naan.png" alt="Pão naan">
-                <p>Pão naan</p>
+        <a href="../index.html">← Voltar</a>
+      </section>
+
+      <section class="recipe">
+        <section class="recipe-header">
+          <img
+            src="images/img1.png"
+            alt="Imagem do prato"
+            class="recipe-image"
+          />
+          <section class="recipe-description">
+            <h1>Bowl Energia</h1>
+            <p class="description">
+              A combinação de frango grelhado com brócolis, aspargos e cenoura
+              sugere um prato nutritivo e energizante.
+            </p>
+            <section class="recipe-ingredients">
+              <h2>Ingredientes:</h2>
+              <section class="menu-grid-details">
+                <section class="card-details">
+                  <img src="images/lettuce.png" alt="Alface" />
+                  <p>Alface</p>
+                </section>
+                <section class="card-details">
+                  <img src="images/tomato.png" alt="Tomate" />
+                  <p>Tomate</p>
+                </section>
+                <section class="card-details">
+                  <img src="images/radish.png" alt="Rabanete" />
+                  <p>Rabanete</p>
+                </section>
+                <section class="card-details">
+                  <img src="images/naan.png" alt="Pão naan" />
+                  <p>Pão naan</p>
+                </section>
               </section>
             </section>
           </section>
-          
+        </section>
+
+        <section class="recipe-method">
+          <h3>Modo de fazer:</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nunc
+            diam, bibendum quis felis id, ornare bibendum ipsum. Cras aliquet
+            justo interdum ex blandit iaculis. Maecenas ut massa id risus
+            convallis ornare. Aenean placerat sem mi, at fringilla nisi pharetra
+            et. Nullam non lectus sed lacus pretium porta. Donec imperdiet magna
+            arcu, quis aliquet ex ullamcorper id. Duis mattis sit amet elit id
+            egestas. Quisque a porta arcu. Nullam eu mauris non felis consequat
+            porttitor sit amet et dui. Vestibulum est quam, auctor vitae
+            vulputate quis, porttitor et dolor. Pellentesque mauris mauris,
+            fringilla non facilisis sed, facilisis sed urna. Vivamus velit urna,
+            sagittis vulputate risus nec, pulvinar dapibus magna. Vestibulum
+            ante ipsum primis in faucibus orci luctus et ultrices posuere
+            cubilia curae; Nulla iaculis lorem et ipsum accumsan accumsan. Duis
+            dignissim dignissim odio, sed porta dui. Morbi gravida, justo quis
+            auctor tempus, ipsum nulla aliquam nunc, ac suscipit nibh augue et
+            lorem. Phasellus ac nisi quis purus fermentum tempor eget nec justo.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sit
+            amet leo sem. Fusce et ullamcorper diam. Suspendisse eget magna
+            placerat, maximus nunc a, luctus risus. Proin sollicitudin ut magna
+            ac ullamcorper. Mauris laoreet neque et sem bibendum, vehicula
+            tempus dolor euismod. Aliquam pretium eros vitae bibendum feugiat.
+            Donec vel dapibus nisl. Integer consectetur dignissim fermentum.
+            Morbi eleifend hendrerit neque at sodales. Sed vel nibh mattis ipsum
+            ornare aliquam.
+          </p>
         </section>
       </section>
+    </main>
 
-      <section>
-        <h3>Modo de fazer:</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nunc diam, bibendum quis felis id, ornare bibendum ipsum. Cras aliquet justo interdum ex blandit iaculis. Maecenas ut massa id risus convallis ornare. Aenean placerat sem mi, at fringilla nisi pharetra et. Nullam non lectus sed lacus pretium porta. Donec imperdiet magna arcu, quis aliquet ex ullamcorper id. Duis mattis sit amet elit id egestas. Quisque a porta arcu. Nullam eu mauris non felis consequat porttitor sit amet et dui. Vestibulum est quam, auctor vitae vulputate quis, porttitor et dolor. Pellentesque mauris mauris, fringilla non facilisis sed, facilisis sed urna. Vivamus velit urna, sagittis vulputate risus nec, pulvinar dapibus magna. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nulla iaculis lorem et ipsum accumsan accumsan.
-          Duis dignissim dignissim odio, sed porta dui. Morbi gravida, justo quis auctor tempus, ipsum nulla aliquam nunc, ac suscipit nibh augue et lorem. Phasellus ac nisi quis purus fermentum tempor eget nec justo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sit amet leo sem. Fusce et ullamcorper diam. Suspendisse eget magna placerat, maximus nunc a, luctus risus. Proin sollicitudin ut magna ac ullamcorper. Mauris laoreet neque et sem bibendum, vehicula tempus dolor euismod. Aliquam pretium eros vitae bibendum feugiat. Donec vel dapibus nisl. Integer consectetur dignissim fermentum. Morbi eleifend hendrerit neque at sodales. Sed vel nibh mattis ipsum ornare aliquam.</p>
+    <footer class="footer">
+      <section class="search-bar-logo">
+        <img src="images/Icon_logo.png" alt="Folha Verde" />
+        <div class="logo">Leve Sabor</div>
       </section>
-    </section>
-  </main>
-
-  <footer>
-    <section>
-      <img src="images/Icon_logo.png" alt="Comida deliciosa">
-      <p>Leve Sabor</p>
-    </section>
-    <p>© 2025 <a href="https://github.com/Fernandabitten">Fernanda Bittencourt</a>. Todos os direitos reservados.</p>    
-  </footer>
-</body>
+      <p>
+        © 2025
+        <a href="https://github.com/Fernandabitten">Fernanda Bittencourt</a>.
+        Todos os direitos reservados.
+      </p>
+    </footer>
+  </body>
 </html>

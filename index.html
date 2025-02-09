@@ -1,133 +1,204 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Leve Sabor</title>
-</head>
-<body>
-  <header>
-    <section>
-      <img src="public/images/Icon_logo.png" alt="Comida deliciosa">
-      <p>Leve Sabor</p>
-    </section>
-    <div>
-      <input type="text" placeholder="Busque pelo nome da receita.">
-    </div>
-    <!-- <a href="admin/recipe-management.html">
-      <button>
-        + Cadastrar / Editar receita
-      </button>
-    </a> -->
-    <a href="admin/login.html">Admin</a>
-  </header>
-  
-  <main>
-    <section>
-      <img src="public/images/banner_home.png" alt="Comida deliciosa">
-      <div>
-        <h1>Sabores Inigualáveis</h1>
-        <p>Leve que alimenta, sabor que encanta.</p>
-      </div>
-    </section>
-    
-    <section>
-      <h2>Pratos Principais</h2>
-      <div>
-        <div>
-          <a href="public/details.html">
-            <img src="public/images/img1.png" alt="Frango ao molho">
-          </a>
-          <h3>Frango ao Molho</h3>
-        </div>
-        <div>
-          <a href="public/details.html">
-            <img src="public/images/img2.png" alt="Sabor do Campo">
-          </a>
-          <h3>Sabor do Campo</h3>
-        </div>
-        <div>
-          <a href="public/details.html">
-            <img src="public/images/img3.png" alt="Ratatouille Vegetariano">
-          </a>
-          <h3>Ratatouille Vegetariano</h3>
-        </div>
-        <div>
-          <a href="public/details.html">
-            <img src="public/images/img4.png" alt="Ratatouille Vegetariano II">
-          </a>
-          <h3>Ratatouille Vegetariano II</h3>
-        </div>
-      </div>
-    </section>
-    
-    <section>
-      <h2>Sobremesas</h2>
-      <div>
-        <div>
-          <a href="public/details.html">
-            <img src="public/images/img5.png" alt="Crocante Tropical">
-          </a>
-          <h3>Crocante Tropical</h3>
-        </div>
-        <div>
-          <a href="public/details.html">
-            <img src="public/images/img6.png" alt="Pecado Divino">
-          </a>
-          <h3>Pecado Divino</h3>
-        </div>
-        <div>
-          <a href="public/details.html">
-            <img src="public/images/img7.png" alt="Perfeição de Morango">
-          </a>
-          <h3>Perfeição de Morango</h3>
-        </div>
-        <div>
-          <a href="public/details.html">
-            <img src="public/images/img8.png" alt="Perfeição de Morango II">
-          </a>
-          <h3>Perfeição de Morango II</h3>
-        </div>
-      </div>
-    </section>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leve Sabor - página inicial</title>
+    <link rel="stylesheet" href="public/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <section class="search-bar-logo">
+        <img src="public/images/Icon_logo.png" alt="Folha Verde" />
+        <div class="logo">Leve Sabor</div>
+      </section>
+      <section class="search-container">
+        <i class="fa fa-search"></i>
+        <input
+          type="text"
+          class="search-bar"
+          placeholder="Busque pelas opções de pratos"
+        />
+      </section>
+      <a href="admin/login.html" class="admin-link">Admin</a>
+    </header>
 
-    <section>
-      <h2>Bebidas</h2>
-      <div>
-        <div>          
-          <a href="public/details.html">
-            <img src="public/images/img9.png" alt="Limão da Casa">
-          </a>
-          <h3>Limão da Casa</h3>
-        </div>
-        <div>
-          <a href="public/details.html">
-            <img src="public/images/img10.png" alt="Dragão Rosa">
-          </a>
-          <h3>Dragão Rosa</h3>
-        </div>
-        <div>
-          <a href="public/details.html">
-            <img src="public/images/img11.png" alt="Roxo Real">
-          </a>
-          <h3>Roxo Real</h3>
-        </div>
-        <div>
-          <a href="public/details.html">
-            <img src="public/images/img12.png" alt="Gelado de Morango">
-          </a>
-          <h3>Gelado de Morango</h3>
-        </div>
-      </div>
-    </section>
-  </main>
-  
-  <footer>
-    <div>
-      <img src="public/images/Icon_logo.png" alt="Comida deliciosa">
-      <p>Leve Sabor</p>
-    </div>
-    <p>© 2025 <a href="https://github.com/Fernandabitten">Fernanda Bittencourt</a>. Todos os direitos reservados.</p>    
-  </footer>
-</body>
+    <main>
+      <section class="banner">
+        <img
+          src="/public/images/banner_home.png"
+          alt="Comida deliciosa"
+          class="banner-image"
+        />
+        <section class="banner-content">
+          <h1>Sabores Inigualáveis</h1>
+          <p>Leve que alimenta, sabor que encanta.</p>
+        </section>
+      </section>
+
+      <section class="menu-section">
+        <h2>Pratos Principais</h2>
+        <section class="menu-grid">
+          <section class="card">
+            <a href="public/details.html">
+              <img src="public/images/img1.png" alt="Frango ao molho" />
+            </a>
+            <h3>Frango ao Molho</h3>
+            <p>
+              A combinação de frango grelhado com brócolis, aspargos e cenoura
+              sugere um prato nutritivo e energizante.
+            </p>
+          </section>
+          <section class="card">
+            <a href="public/details.html">
+              <img src="public/images/img2.png" alt="Sabor do Campo" />
+            </a>
+            <h3>Sabor do Campo</h3>
+            <p>
+              A presença de legumes frescos e arroz remete aos sabores do campo.
+            </p>
+          </section>
+          <section class="card">
+            <a href="public/details.html">
+              <img src="public/images/img3.png" alt="Ratatouille Vegetariano" />
+            </a>
+            <h3>Ratatouille Vegetariano</h3>
+            <p>
+              O verde predominante dos vegetais e o equilíbrio dos ingredientes
+              fazem desse prato uma ótima opção.
+            </p>
+          </section>
+          <section class="card">
+            <a href="public/details.html">
+              <img
+                src="public/images/img4.png"
+                alt="Ratatouille Vegetariano II"
+              />
+            </a>
+            <h3>Ratatouille Vegetariano II</h3>
+            <p>
+              Rabanetes, folhas verdes e molho agridoce salpicados com gergelim
+            </p>
+          </section>
+        </section>
+      </section>
+
+      <section class="menu-section">
+        <h2>Sobremesas</h2>
+        <section class="menu-grid">
+          <section class="card">
+            <a href="public/details.html">
+              <img src="public/images/img5.png" alt="Crocante Tropical" />
+            </a>
+            <h3>Crocante Tropical</h3>
+            <p>
+              Camadas de frutas frescas e vibrantes, granola crocante e um creme
+              suave e cremoso se unem para criar uma explosão de sabor em sua
+              boca.
+            </p>
+          </section>
+          <section class="card">
+            <a href="public/details.html">
+              <img src="public/images/img6.png" alt="Pecado sectionino" />
+            </a>
+            <h3>Pecado Divino</h3>
+            <p>
+              Um bolo de chocolate intenso e úmido, coberto com uma ganache
+              irresistível e finalizado com raspas de chocolate.
+            </p>
+          </section>
+          <section class="card">
+            <a href="public/details.html">
+              <img src="public/images/img7.png" alt="Perfeição de Morango" />
+            </a>
+            <h3>Paixão Francesa</h3>
+            <p>
+              Uma releitura do clássico Mille-Feuilles, com finas camadas de
+              massa folhada crocante intercaladas com creme pâtissier e um toque
+              especial de frutas vermelhas frescas.
+            </p>
+          </section>
+          <section class="card">
+            <a href="public/details.html">
+              <img src="public/images/img8.png" alt="Perfeição de Morango II" />
+            </a>
+            <h3>Perfeição de Morango</h3>
+            <p>
+              Este irresistível pedaço de bolo é uma verdadeira obra de arte
+              culinária. Com camadas macias de bolo de chocolate úmido,
+              intercaladas com cremoso recheio e finalizado com uma generosa
+              cobertura de chocolate.
+            </p>
+          </section>
+        </section>
+      </section>
+
+      <section class="menu-section">
+        <h2>Bebidas</h2>
+        <sectio class="menu-grid">
+          <section class="card">
+            <a href="public/details.html">
+              <img src="public/images/img9.png" alt="Limão da Casa" />
+            </a>
+            <h3>Limão da Casa</h3>
+            <p>
+              Uma explosão de vitamina C em cada gole, perfeito para começar o
+              dia com energia.
+            </p>
+          </section>
+          <section class="card">
+            <a href="public/details.html">
+              <img src="public/images/img10.png" alt="Dragão Rosa" />
+            </a>
+            <h3>Dragão Rosa</h3>
+            <p>
+              Uma viagem aos sabores exóticos! O suco de pitaya é feito com a
+              polpa suculenta da fruta do dragão, rica em antioxidantes e
+              vitaminas.
+            </p>
+          </section>
+          <section class="card">
+            <a href="public/details.html">
+              <img src="public/images/img11.png" alt="Roxo Real" />
+            </a>
+            <h3>Roxo Real</h3>
+            <p>
+              Feito com uvas frescas e selecionadas, ele oferece um sabor
+              adocicado e refrescante, perfeito para qualquer ocasião.
+            </p>
+          </section>
+          <section class="card">
+            <a href="public/details.html">
+              <img src="public/images/img12.png" alt="Gelado de Morango" />
+            </a>
+            <h3>Gelado de Morango</h3>
+            <p>
+              Feito com morangos maduros e suculentos, esse suco tem o sabor
+              inconfundível da fruta, com um toque adocicado natural. Perfeito
+              para qualquer ocasião!
+            </p>
+          </section>
+        </sectio>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <section class="search-bar-logo">
+        <img src="public/images/Icon_logo.png" alt="Folha Verde" />
+        <div class="logo">Leve Sabor</div>
+      </section>
+      <p>
+        © 2025
+        <a href="https://github.com/Fernandabitten">Fernanda Bittencourt</a>.
+        Todos os direitos reservados.
+      </p>
+    </footer>
+  </body>
 </html>

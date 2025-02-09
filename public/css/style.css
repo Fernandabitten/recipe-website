@@ -1,0 +1,254 @@
+/* Reset */
+:root {
+  --cor-primaria: #000a0f;
+  --cor-secundaria: #162a34;
+  --cor-terciaria: #324148;
+  --cor-fundo: #000a0f;
+  --fonte-principal:"Poppins", sans-serif;
+  --tamanho-texto: 24px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family:var(--fonte-principal);
+  font-size: var(--tamanho-texto);
+  background-color: var(--cor-fundo);
+  color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.625rem 2.5rem;
+  background-color: var(--cor-secundaria);
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.search-bar {
+  width: 100%; */
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.search-bar-logo {
+  display: flex;
+}
+
+.search-container {
+  width: 50%;
+  background-color: var(--cor-terciaria);
+  padding: 8px 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 5px;
+}
+
+.search-container i {
+  color:rgb(100, 100, 112);
+}
+
+input.search-bar {
+  background: transparent;
+  border-style: none;
+  outline: none;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+main{
+  padding: 40px;
+}
+
+/* Banner */
+.banner {
+  margin-top: 7rem;;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: 260px;
+  background-color: var(--cor-terciaria); 
+}
+
+.banner-image {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin-bottom: 6rem;
+}
+
+.banner-content {
+  position: absolute;
+  right: 10%;
+  bottom: 30%;
+  max-width: 500px;
+  text-align: left;
+  color: #ffffff;
+}
+
+.banner-content h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.banner-content p {
+  margin-top: 1rem;
+  font-weight: 300;
+}
+
+/* Menu*/
+.menu-section {
+  padding: 2rem 0rem;
+}
+
+.menu-section h2 {
+  margin-bottom: 2rem;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background-color: var(--cor-terciaria);
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  padding: 1rem;
+}
+
+.card h3{
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.card p{
+  font-size: 1rem;
+}
+
+/* Detalhes da receita*/
+.recipe-header{
+  display: flex; 
+  align-items: flex-start; 
+}
+
+.recipe-image {
+  width: 540px;
+  height: auto;
+}
+
+.recipe-details {
+  margin-left: 20px;
+}
+
+.recipe-description{
+  margin-top: 3rem;
+}
+
+.recipe-description h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.recipe-ingredients h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 1rem 0rem;
+}
+
+.recipe-method h3{
+  margin-bottom: 1rem;
+}
+/* 
+.recipe h1 {
+  font-size: 32px;
+}
+
+.description {
+  margin-top: -10px;
+}
+
+.ingredients-section,
+.instructions-section {
+  margin-top: 20px;
+}
+
+.ingredients img {
+  margin-right: 10px;
+}
+
+.instructions-section p {
+  line-height: 1.6em;
+} */
+
+.menu-grid-details {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(5px, 6.5rem));
+  /* gap: 1.5rem; */
+}
+
+.card-details {
+  text-align: center;
+  width: 80px;
+  font-size: 18px;
+}
+
+.card-details img {
+  max-width: 100%;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .banner {
+    margin-top: 4rem;
+    background-color:transparent; 
+  }
+
+  .banner-content h1 {
+    font-size: 1.8rem; 
+  }
+
+  .banner-image {
+    margin-bottom: 10rem;
+  }
+
+  .banner-content {
+    right: 5%;
+    bottom: 1%;
+    text-align: center;   
+  }
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 26px;
+  background-color: var(--cor-terciaria);
+}
+
+.footer p {
+  font-size: 0.875rem;
+}
