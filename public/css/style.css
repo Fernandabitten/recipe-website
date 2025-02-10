@@ -30,14 +30,21 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.625rem 2.5rem;
+  padding: 1rem 2.5rem;
   background-color: var(--cor-secundaria);
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .logo {
   font-size: 24px;
   font-weight: bold;
-  margin-top: 10px;
 }
 
 .search-bar {
@@ -48,20 +55,29 @@ header {
 
 .search-bar-logo {
   display: flex;
+
+  align-items: center;
+  gap: 10px;
 }
 
 .search-container {
-  width: 50%;
   background-color: var(--cor-terciaria);
   padding: 8px 12px;
   display: flex;
   align-items: center;
   gap: 10px;
   border-radius: 5px;
+  flex-grow: 1;
+  max-width: 50%;
+  margin: 0 1rem;
 }
 
 .search-container i {
   color:rgb(100, 100, 112);
+}
+
+.admin-link {
+  white-space: nowrap;
 }
 
 input.search-bar {
@@ -72,8 +88,10 @@ input.search-bar {
   font-size: 20px;
 }
 
+/* Main */
+
 main{
-  padding: 40px;
+  padding: 2.5rem;
 }
 
 /* Banner */
@@ -132,7 +150,7 @@ main{
   align-items: center; 
   padding: 1rem;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  flex: 0 0 calc(20% - 1.2rem); /* 20% para 5 itens visíveis */
+  flex: 0 0 calc(20% - 1.2rem); 20%  /*para 5 itens visíveis */
   max-width: calc(20% - 1.2rem);
 }
 
@@ -156,18 +174,16 @@ main{
   font-size: 1rem;
 }
 
-
 .carousel-container {
-  position: relative;
   overflow: hidden;
+  position: relative;
   width: 100%;
-  padding: 0 40px; /* Adicione espaço para os botões */
 }
 
 .carousel {
   display: flex;
-  transition: transform 0.5s ease-in-out;
-  gap: 1.5rem;
+  transition: transform 0.3s ease-in-out;
+  gap: 1rem;
 }
 
 .arrow {
@@ -186,11 +202,11 @@ main{
 }
 
 .arrow-left {
-  left: 0;
+  left: 0px;
 }
 
 .arrow-right {
-  right: 0;
+  right: 0px;
 }
 
 /* Detalhes da receita*/
@@ -242,8 +258,46 @@ main{
   max-width: 100%;
 }
 
+/* Footer */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 26px;
+  background-color: var(--cor-terciaria);
+}
+
+.footer p {
+  font-size: 0.875rem;
+}
+
 /* Responsividade */
+@media screen and (max-width: 1200px) {
+  .card {
+    flex: 0 0 calc(33.33% - 1rem); /* Exibe 3 cards */
+  }
+}
+
 @media (max-width: 768px) {
+  .header-content {
+    flex-wrap: wrap;
+  }
+
+  .search-container {
+    order: 3;
+    max-width: 100%;
+    margin: 1rem 0 0;
+    width: 100%;
+  }
+
+  .search-bar-logo {
+    flex-grow: 1;
+  }
+
+  .admin-link {
+    order: 2;
+  }
+
   .banner {
     margin-top: 4rem;
     background-color:transparent; 
@@ -262,17 +316,28 @@ main{
     bottom: 1%;
     text-align: center;   
   }
+
+  .card {
+    flex: 0 0 calc(50% - 1rem); /* Exibe 2 cards */
+  }
 }
 
-/* Footer */
-.footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 26px;
-  background-color: var(--cor-terciaria);
-}
+@media screen and (max-width: 480px) {
+  .menu-section h2 {
+    font-size: 1.5rem;
+  }
 
-.footer p {
-  font-size: 0.875rem;
+  .carousel {
+    flex-direction: column; /* Empilha os cards */
+    align-items: center;
+  }
+  
+  .card {
+    flex: none;
+    width: 90%;
+  }
+
+  .arrow {
+    display: none; /* Esconde as setas */
+  }
 }
