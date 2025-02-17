@@ -1,17 +1,10 @@
-:root {
-  --cor-primaria: #000a0f;
-  --cor-secundaria: #162a34;
-  --cor-terciaria: #324148;
-  --cor-fundo: #000a0f;
-  --fonte-principal: "Poppins", sans-serif;
-  --tamanho-texto: 24px;
-}
+@import url("../../public/css/variables.css");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Segoe UI", sans-serif;
+  font-family: var(--fonte-principal);
 }
 
 body {
@@ -28,7 +21,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
+  color: var(--cor-branca);
   text-align: center;
   padding: 2rem;
 }
@@ -51,7 +44,6 @@ body {
 }
 
 h1 {
-  color: #1a1a1a;
   margin-bottom: 2rem;
   text-align: center;
 }
@@ -63,7 +55,6 @@ h1 {
 label {
   display: block;
   margin-bottom: 0.5rem;
-  color: #4a4a4a;
   font-weight: 500;
 }
 
@@ -78,7 +69,7 @@ input {
 .button {
   width: 100%;
   background: #007bff;
-  color: white;
+  color: var(--cor-branca);
   border: none;
   border-radius: 4px;
   font-size: 1rem;

@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
+
+:root {
+  /* Cores principais */
+  --cor-primaria: #000a0f;
+  --cor-secundaria: #162a34;
+  --cor-terciaria: #324148;
+  --cor-fundo: #000a0f;
+  /* Tons Neutros */
+  --cor-branca: #ffffff;
+  --cor-cinza-claro: #ecf0f1;
+  --cor-cinza-escuro: rgb(100, 100, 112);
+  --cor-fumaça-azulada: #919fa7;
+  --cor-preto-transparente: rgba(0, 0, 0, 0.2);
+  --cor-azul-claro: #3498db;
+  /* Status */
+  --cor-sucesso: #28a745;
+  --cor-aviso: #ffc107;
+  --cor-erro: #dc3545;
+
+  /* Fonte */
+  --tamanho-texto: 24px;
+
+  /* Fontes principais */
+  --fonte-principal: "Poppins", sans-serif;
+  --fonte-secundaria: "Roboto", sans-serif;
+
+  /* Tamanhos de texto */
+  --tamanho-texto-sm: 12px;
+  --tamanho-texto-md: 16px;
+  --tamanho-texto-lg: 20px;
+  --tamanho-texto-xl: 24px;
+  --tamanho-texto-xxl: 32px;
+
+  /* Pesos da fonte */
+  --peso-leve: 300;
+  --peso-normal: 400;
+  --peso-medio: 500;
+  --peso-negrito: 700;
+
+  /* Altura da linha */
+  --altura-linha-pequena: 1.2;
+  --altura-linha-normal: 1.5;
+  --altura-linha-grande: 1.8;
+}

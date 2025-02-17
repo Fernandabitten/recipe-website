@@ -1,12 +1,6 @@
+@import url("variables.css");
+
 /* Reset */
-:root {
-  --cor-primaria: #000a0f;
-  --cor-secundaria: #162a34;
-  --cor-terciaria: #324148;
-  --cor-fundo: #000a0f;
-  --fonte-principal:"Poppins", sans-serif;
-  --tamanho-texto: 24px;
-}
 * {
   margin: 0;
   padding: 0;
@@ -15,14 +9,14 @@
 
 body {
   font-family:var(--fonte-principal);
-  font-size: var(--tamanho-texto);
+  font-size: var(--tamanho-texto-xl);
   background-color: var(--cor-fundo);
-  color: #ffffff;
+  color: var(--cor-branca);
 }
 
 a {
   text-decoration: none;
-  color: #ffffff;
+  color: var(--cor-branca);
 }
 
 /* Header */
@@ -73,7 +67,7 @@ header {
 }
 
 .search-container i {
-  color:rgb(100, 100, 112);
+  color: var(--cor-cinza-escuro);
 }
 
 .admin-link {
@@ -84,7 +78,7 @@ input.search-bar {
   background: transparent;
   border-style: none;
   outline: none;
-  color: #ffffff;
+  color:var(--cor-branca)
   font-size: 20px;
 }
 
@@ -117,9 +111,9 @@ main{
   position: absolute;
   right: 10%;
   bottom: 30%;
-  max-width: 500px;
+  max-width: 600px;
   text-align: left;
-  color: #ffffff;
+  color: var(--cor-branca)
 }
 
 .banner-content h1 {
@@ -192,7 +186,7 @@ main{
   transform: translateY(-50%);
   z-index: 10;
   background-color: rgba(0, 0, 0, 0.5);
-  color: white;
+  color: var(--cor-branca);
   border: none;
   padding: 10px;
   cursor: pointer;
