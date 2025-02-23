@@ -266,9 +266,47 @@ main{
 }
 
 /* Responsividade */
+@media print {
+  /* Oculta elementos indesejados */
+  .search-container,
+  .admin-link,
+  .banner-image,
+  .arrow {
+    display: none !important;
+  }
+
+  main {
+    margin-top: -20% !important;
+  }
+
+  .banner-content {
+    display: block !important;
+    position: static !important;
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+  
+
+  /* Remove cores e imagens de fundo */
+  * {
+    background: none !important;
+    color: black !important;
+  }
+
+  /* Ajusta o layout para impressão */
+  body {
+    font-size: 12pt;
+  }
+}
+
 @media screen and (max-width: 1200px) {
   .card {
     flex: 0 0 calc(33.33% - 1rem); /* Exibe 3 cards */
+  }
+  .banner-content {
+    right: 5%;
+    bottom: 1%;
+    text-align: center;   
   }
 }
 
@@ -335,3 +373,5 @@ main{
     display: none; /* Esconde as setas */
   }
 }
+
+
