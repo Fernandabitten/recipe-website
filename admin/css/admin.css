@@ -242,6 +242,64 @@ th {
   opacity: 0.8;
 }
 
+/* pg usuário */
+.navbar.bg-secondary {  
+  background-color: #162a34 !important;  
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.bg-user-form{
+  background-color: rgba(50, 65, 72, 1);
+}
+
+.table {
+  color: #fff;
+}
+.table thead{
+  background: #324148;
+}
+.table thead th {
+  background: #324148;
+  color: #ffff;
+  border-bottom: 2px solid #303030;
+}
+.table tbody td {
+  border-top: 1px solid #475569;
+}
+.btn-action {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  border-radius: 0.2rem;
+}
+.btn-edit {
+  color: #fff;
+  background-color: #1e90ff;
+  border-color: #1e90ff;
+}
+.btn-delete {
+  color: #fff;
+  background-color: #dc3545;
+  border-color: #dc3545;
+}
+.btn-primary {
+  background-color: #5ca379 !important; /* Cor ajustada */
+  border-color: #5ca379 !important; /* Cor ajustada */
+}
+.form-control,
+.form-select {
+  background-color: #919fa7 !important; /* Cor de fundo ajustada */
+  color: #fff !important;
+  height: 58px !important; /* Altura ajustada */
+}
+.form-control::placeholder,
+.form-select option {
+  color: #ccc !important;
+}
+
 @media (max-width: 768px) {
   .admin-nav {
     display: none; 
