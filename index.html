@@ -29,8 +29,12 @@
           />
         </section>
         <a href="admin/login.html" class="admin-link">Admin</a>
+        <button id="theme-toggle">
+          <i class="fas fa-sun"></i>
+          <i class="fas fa-moon"></i>
+        </button>
       </section>
-    </header>  
+    </header>
 
     <main>
       <section class="banner">
@@ -48,7 +52,10 @@
       <section class="menu-section">
         <h2>Pratos Principais</h2>
         <section class="carousel-container">
-          <button class="arrow arrow-left" onclick="moveCarousel(-1, 'pratos-principais')">
+          <button
+            class="arrow arrow-left"
+            onclick="moveCarousel(-1, 'pratos-principais')"
+          >
             &#10094;
           </button>
           <section class="carousel pratos-principais">
@@ -164,7 +171,10 @@
               </p>
             </section>
           </section>
-          <button class="arrow arrow-right" onclick="moveCarousel(1, 'pratos-principais')">
+          <button
+            class="arrow arrow-right"
+            onclick="moveCarousel(1, 'pratos-principais')"
+          >
             &#10095;
           </button>
         </section>
@@ -173,7 +183,10 @@
       <section class="menu-section">
         <h2>Sobremesas</h2>
         <section class="carousel-container">
-          <button class="arrow arrow-left" onclick="moveCarousel(-1, 'sobremesas')">
+          <button
+            class="arrow arrow-left"
+            onclick="moveCarousel(-1, 'sobremesas')"
+          >
             &#10094;
           </button>
           <section class="carousel sobremesas">
@@ -183,9 +196,9 @@
               </a>
               <h3>Crocante Tropical</h3>
               <p>
-                Camadas de frutas frescas e vibrantes, granola crocante e um creme
-                suave e cremoso se unem para criar uma explosão de sabor em sua
-                boca.
+                Camadas de frutas frescas e vibrantes, granola crocante e um
+                creme suave e cremoso se unem para criar uma explosão de sabor
+                em sua boca.
               </p>
             </section>
             <section class="card">
@@ -205,13 +218,16 @@
               <h3>Paixão Francesa</h3>
               <p>
                 Uma releitura do clássico Mille-Feuilles, com finas camadas de
-                massa folhada crocante intercaladas com creme pâtissier e um toque
-                especial de frutas vermelhas frescas.
+                massa folhada crocante intercaladas com creme pâtissier e um
+                toque especial de frutas vermelhas frescas.
               </p>
             </section>
             <section class="card">
               <a href="public/details.html#img8">
-                <img src="public/images/img8.png" alt="Perfeição de Morango II" />
+                <img
+                  src="public/images/img8.png"
+                  alt="Perfeição de Morango II"
+                />
               </a>
               <h3>Perfeição de Morango</h3>
               <p>
@@ -221,14 +237,23 @@
                 cobertura de chocolate.
               </p>
             </section>
-          <button class="arrow arrow-right" onclick="moveCarousel(1, 'sobremesas')">&#10095;</button>
+          </section>
+          <button
+            class="arrow arrow-right"
+            onclick="moveCarousel(1, 'sobremesas')"
+          >
+            &#10095;
+          </button>
         </section>
       </section>
 
       <section class="menu-section">
         <h2>Bebidas</h2>
         <section class="carousel-container">
-          <button class="arrow arrow-left" onclick="moveCarousel(-1, 'bebidas')">
+          <button
+            class="arrow arrow-left"
+            onclick="moveCarousel(-1, 'bebidas')"
+          >
             &#10094;
           </button>
           <section class="carousel bebidas">
@@ -308,7 +333,12 @@
               </p>
             </section>
           </section>
-          <button class="arrow arrow-right" onclick="moveCarousel(1, 'bebidas')">&#10095;</button>
+          <button
+            class="arrow arrow-right"
+            onclick="moveCarousel(1, 'bebidas')"
+          >
+            &#10095;
+          </button>
         </section>
       </section>
     </main>
@@ -324,5 +354,6 @@
         Todos os direitos reservados.
       </p>
     </footer>
+    <script src="public/js/script.js"></script>
   </body>
 </html>

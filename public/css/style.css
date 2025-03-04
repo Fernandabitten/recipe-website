@@ -11,13 +11,38 @@ body {
   font-family:var(--fonte-principal);
   font-size: var(--tamanho-texto-xl);
   background-color: var(--cor-fundo);
-  color: var(--cor-branca);
+  color: var(--cor-texto);
 }
+
 
 a {
   text-decoration: none;
-  color: var(--cor-branca);
+  color: var(--cor-texto);
 }
+
+#theme-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--cor-texto);
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+#theme-toggle i {
+  display: none;
+}
+
+body.light #theme-toggle .fa-moon {
+  display: inline-block;
+}
+
+body:not(.light) #theme-toggle .fa-sun {
+  display: inline-block;
+}
+
 
 /* Header */
 header {
@@ -71,15 +96,39 @@ header {
 }
 
 .admin-link {
-  white-space: nowrap;
+  display: flex;
+  gap: 1rem;
 }
 
 input.search-bar {
   background: transparent;
   border-style: none;
   outline: none;
-  color:var(--cor-branca)
+  color:var(--cor-texto)
   font-size: 20px;
+}
+
+#theme-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--cor-texto);
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+#theme-toggle i {
+  display: none;
+}
+
+body.dark #theme-toggle .fa-sun {
+  display: inline-block;
+}
+
+body:not(.dark) #theme-toggle .fa-moon {
+  display: inline-block;
 }
 
 /* Main */
@@ -114,7 +163,7 @@ main {
   bottom: 30%;
   max-width: 600px;
   text-align: left;
-  color: var(--cor-branca)
+  color: var(--cor-texto)
 }
 
 .banner-content h1 {
@@ -187,7 +236,7 @@ main {
   transform: translateY(-50%);
   z-index: 10;
   background-color: rgba(0, 0, 0, 0.5);
-  color: var(--cor-branca);
+  color: var(--cor-texto);
   border: none;
   padding: 10px;
   cursor: pointer;

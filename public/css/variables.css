@@ -7,7 +7,7 @@
   --cor-terciaria: #324148;
   --cor-fundo: #000a0f;
   /* Tons Neutros */
-  --cor-branca: #ffffff;
+  --cor-texto: #ffffff;
   --cor-cinza-claro: #ecf0f1;
   --cor-cinza-escuro: rgb(100, 100, 112);
   --cor-fumaça-azulada: #919fa7;
@@ -42,4 +42,12 @@
   --altura-linha-pequena: 1.2;
   --altura-linha-normal: 1.5;
   --altura-linha-grande: 1.8;
+}
+
+body.light {
+  --cor-fundo: #ffffff;
+  --cor-texto: #000000;
+  --cor-secundaria: #eee;
+  --cor-terciaria: #ddd;
+  --cor-cinza-escuro: #888;
 }
