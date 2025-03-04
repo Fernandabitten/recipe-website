@@ -11,7 +11,7 @@ body {
   font-family: var(--fonte-principal);
   font-size: var(--tamanho-texto-xl);
   background-color: var(--cor-fundo);
-  color: var(--tamanho-texto-xl);
+  color: var(--cor-branca);
 }
 
 /* Header */
@@ -51,18 +51,19 @@ body {
 
 .nav-link {
   color: var(--cor-cinza-claro);
-  text-decoration: none; */
+  text-decoration: none;
   display: block;
   width: 100%;
   text-align: center;
   padding: 0.75rem;
   border-radius: 5px;
-  background: rgba(170, 37, 66, 0.1);  
+  background: rgba(170, 37, 66, 0.1);
 }
 
 .nav-link.active {
   background: #3498db;
 }
+
 main {
   margin-left: 250px; /* Empurrando o conteúdo para a direita */
   padding: 2rem;
@@ -86,6 +87,17 @@ main {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
+.form-ingredients {
+  background-color: #fff;
+  color: #303030;
+}
+
+.form-control,
+.form-select {
+  background-color: #fff !important;
+  height: 58px !important;
+}
+
 .form-group {
   display: flex;
   gap: 1rem;
@@ -104,7 +116,7 @@ main {
   text-align: right;
 }
 
-.form-group-ingredients{
+.form-group-ingredients {
   width: 100%;
   padding: 24px;
   margin-top: 20px;
@@ -112,7 +124,7 @@ main {
   color: var(--cor-cinza-claro);
 }
 
-.form-group-ingredients-input{
+.form-group-ingredients-input {
   display: flex;
   margin-top: 16px;
 }
@@ -124,7 +136,6 @@ select {
   padding: 24px;
   border: none;
   border-radius: 5px;
-  color: var(--cor-branca);
   font-size: 1rem;
   background: #919fa7;
 }
@@ -135,8 +146,8 @@ input[type="file"] {
   color: gray;
 }
 
-.form-group-ingredients-upload{
-  background: #D9D9D9;
+.form-group-ingredients-upload {
+  background: #d9d9d9;
   margin-left: 24px;
   border-radius: 5px;
   width: 500px;
@@ -147,7 +158,7 @@ textarea {
 }
 
 .btn-salvar {
-  background-color: #5CA379;
+  background-color: #5ca379;
   color: var(--cor-branca);
   border: none;
   padding: 0.7rem 1.2rem;
@@ -156,7 +167,7 @@ textarea {
   font-weight: bold;
   font-size: 20px;
   margin-left: auto;
-  display: block; Necessário para alinhamento
+  display: block;
 }
 
 /* Table */
@@ -215,7 +226,7 @@ th {
 }
 
 .footer-content {
-  padding-left: 250px; 
+  padding-left: 250px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -230,6 +241,10 @@ th {
 
 .author-link:hover {
   opacity: 0.8;
+}
+
+.text-color {
+  color: var(--cor-branca);
 }
 
 /* Ajustes para telas pequenas */
@@ -255,8 +270,12 @@ th {
     font-size: 1rem;
   }
 
-  .main {
-    margin-left: 0; /* Remove o espaço lateral */
+  main {
+    flex: 1;
+    padding-top: 2rem;
     padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
   }
 }

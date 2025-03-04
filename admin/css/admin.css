@@ -73,7 +73,6 @@ body {
   transition: all 0.3s ease;
 }
 
-
 /* 🔹 Checkbox escondido para ativar o menu */
 #menu-toggle {
   display: none;
@@ -97,7 +96,7 @@ main {
 }
 
 .recipe-form {
-  background-color: var( --cor-terciaria);
+  background-color: var(--cor-terciaria);
   border-radius: 10px;
   padding: 2rem;
   margin-bottom: 2rem;
@@ -115,14 +114,19 @@ main {
   text-align: right;
 }
 
-.form-group-ingredients{
+.form-ingredients {
+  background-color: #fff;
+  color: #303030;
+}
+
+.form-group-ingredients {
   width: 100%;
   padding: 24px;
   margin-top: 20px;
   border-radius: 5px;
 }
 
-.form-group-ingredients-input{
+.form-group-ingredients-input {
   display: flex;
   margin-top: 16px;
 }
@@ -134,7 +138,7 @@ select {
   padding: 24px;
   border: none;
   border-radius: 5px;
-  color: var(--cor-branca);
+  /* color: var(--cor-branca); */
   font-size: 1rem;
   background: var(--cor-fumaça-azulada);
 }
@@ -145,7 +149,7 @@ input[type="file"] {
   color: var(--cor-cinza-escuro);
 }
 
-.form-group-ingredients-upload{
+.form-group-ingredients-upload {
   background: var(--cor-fumaça-azulada);
   margin-left: 24px;
   border-radius: 5px;
@@ -157,7 +161,7 @@ textarea {
 }
 
 .btn-salvar {
-  background-color: #5CA379;
+  background-color: #5ca379;
   color: var(--cor-branca);
   border: none;
   padding: 0.7rem 1.2rem;
@@ -166,7 +170,7 @@ textarea {
   font-weight: bold;
   font-size: 20px;
   margin-left: auto;
-  display: block; Necessário para alinhamento
+  display: block;
 }
 
 /* Table */
@@ -243,22 +247,22 @@ th {
 }
 
 /* pg usuário */
-.navbar.bg-secondary {  
-  background-color: #162a34 !important;  
+.navbar.bg-secondary {
+  background-color: #162a34 !important;
 }
 
 .navbar-toggler {
   border: none;
 }
 
-.bg-user-form{
+.bg-user-form {
   background-color: rgba(50, 65, 72, 1);
 }
 
 .table {
   color: #fff;
 }
-.table thead{
+.table thead {
   background: #324148;
 }
 .table thead th {
@@ -286,14 +290,13 @@ th {
   border-color: #dc3545;
 }
 .btn-primary {
-  background-color: #5ca379 !important; /* Cor ajustada */
-  border-color: #5ca379 !important; /* Cor ajustada */
+  background-color: #5ca379 !important;
+  border-color: #5ca379 !important;
 }
 .form-control,
 .form-select {
-  background-color: #919fa7 !important; /* Cor de fundo ajustada */
-  color: #fff !important;
-  height: 58px !important; /* Altura ajustada */
+  background-color: #fff !important;
+  height: 58px !important;
 }
 .form-control::placeholder,
 .form-select option {
@@ -302,7 +305,7 @@ th {
 
 @media (max-width: 768px) {
   .admin-nav {
-    display: none; 
+    display: none;
     flex-direction: column;
     background: #333;
     position: absolute;
