@@ -63,9 +63,12 @@ recipe-website/
 ├── public/                      # Área pública
 │   ├── details.html             # Página de detalhes da receita
 │   ├── /images                  # Imagens usadas no projeto
+|   ├── /css                     # Estilo e variáveis css
+|   ├── /js                      # JavaScript
 ├── admin/                       # Área de administração 
 │   ├── login.html               # Página de login
 │   ├── recipe-management.html   # Página de gerenciamento das receitas
-│   ├── usuarios.html            # Página de gerenciamento de usuários
+│   ├── user_management.html     # Página de gerenciamento de usuários
+|   ├── /css                     # Estilo
 └── README.md                    # Arquivo de documentação do projeto 
 
