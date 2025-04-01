@@ -5,7 +5,7 @@
 
 Este projeto foi desenvolvido como parte da disciplina de **Web I** no IFCE. O objetivo é criar um site com páginas estáticas usando **HTML**, **CSS** e **JavaScript**, além de publicar o projeto utilizando o **GitHub Pages**.
 
-## 🎯 Objetivo do Projeto
+## Objetivo do Projeto
 
 - Criar um site com:
   - **Área pública**: página inicial e de detalhes dos objetos-tema.
@@ -13,13 +13,13 @@ Este projeto foi desenvolvido como parte da disciplina de **Web I** no IFCE. O o
 - Aplicar conceitos de HTML semântico, CSS e GitHub Pages.
 - Praticar as melhores práticas no uso de HTML.
 
-## 🎨 Design do Projeto
+## Design do Projeto
 O layout do projeto foi desenvolvido previamente no **Figma** e serve como guia para a implementação das páginas HTML.  
 Acesse o protótipo interativo clicando no link abaixo:  
 👉 [Protótipo no Figma - Leve Sabor](https://www.figma.com/proto/UgfbMzpEacpUJ8VgH4tHx7/Leve-Sabor?node-id=50-72&p=f&t=l8f3DpPzzWq5DA6t-0&scaling=min-zoom&content-scaling=fixed&page-id=50%3A71&starting-point-node-id=50%3A72)
 Você deve ter uma conta <a href="https://www.figma.com/">Figma</a> para acessá-lo..
 
-## 🌟 Funcionalidades
+## Funcionalidades
 ### Área Pública
 - **Página Inicial:** Exibição de uma coleção de objetos-tema com dados relevantes (título, imagem e descrição).
 - **Página de Detalhes:** Visualização de todos os dados sobre um objeto-tema.
@@ -34,14 +34,14 @@ Elementos em todas as páginas:
 - **Página de Cadastro de Objetos-tema:** Formulário para adicionar/editar objetos e tabela com lista de objetos cadastrados, incluindo botões para editar e apagar.
 - **Página de Cadastro de Usuários:** Formulário para adicionar/editar usuários e tabela com lista de usuários cadastrados, incluindo botões para editar e apagar.
 
-## 🛠️ Tecnologias Utilizadas
+## Tecnologias Utilizadas
    
 - **HTML:** Estrutura do site.
 - **CSS:** Estilização básica do conteúdo.
 - **JavaScript:** Implementação de funcionalidades (futuramente nas unidades seguintes).
 - **GitHub Pages:** Publicação do site.
 
-## 🚀 Como Utilizar
+## Como Utilizar
 
 1. **Clone o repositório:**
    ```bash
@@ -50,14 +50,8 @@ Elementos em todas as páginas:
 
 [👉 Acesse o site aqui!!](https://fernandabitten.github.io/recipe-website/)
 
-
-## ✨ Próximos Passos
-- **Adição de Estilos**: Melhorar o visual do site com CSS.
-- **Interatividade**: Adicionar funcionalidades com JavaScript.
-- **Validações**: Implementar validação nos formulários.
-
-## 🗂️ Estrutura do Projeto
-```plaintext
+## Estrutura do Projeto
+```
 recipe-website/
 ├── index.html                   # Página inicial
 ├── public/                      # Área pública
@@ -71,4 +65,4 @@ recipe-website/
 │   ├── user_management.html     # Página de gerenciamento de usuários
 |   ├── /css                     # Estilo
 └── README.md                    # Arquivo de documentação do projeto 
-
+```
